@@ -54,7 +54,7 @@ nav {
 
 .slider {
     background: url(./images/black-textured-brick-wall-background_desktop.jpg);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%); */
 }
 
 .slider-wrapper {
@@ -75,7 +75,6 @@ nav {
     height: 750px;
     border-radius: 50%;
     position: absolute;
-    background-color: red;
 }
 
 .slider-img {
@@ -103,5 +102,56 @@ nav {
     text-align: center;
     border: 1px solid gray;
     z-index: 1;
+}
+
+.buy-button {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    font-size: 30px;
+    font-weight: 900;
+    color: white;
+    border: 1px solid gray;
+    background-color: black;
+    z-index: 1;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.buy-button:hover {
+    background-color: white;
+    color: black;
+}
+
+.slider-item:nth-child(1) .slide-bg{
+    background-color: rgb(87, 148, 102);
+}
+.slider-item:nth-child(2) .slide-bg{
+    background-color: rebeccapurple;
+}
+.slider-item:nth-child(3) .slide-bg{
+    background-color: teal;
+}
+.slider-item:nth-child(4) .slide-bg{
+    background-color: cornflowerblue;
+}
+.slider-item:nth-child(5) .slide-bg{
+    background-color: burlywood;
+}
+
+.slider-item:nth-child(1) .slider-price{
+    color: rgb(87, 148, 102);
+}
+.slider-item:nth-child(2) .slider-price{
+    color: white;
+}
+.slider-item:nth-child(3) .slider-price{
+    color: teal;
+}
+.slider-item:nth-child(4) .slider-price{
+    color: cornflowerblue;
+}
+.slider-item:nth-child(5) .slider-price{
+    color: burlywood;
 }
 
