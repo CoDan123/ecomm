@@ -56,3 +56,15 @@ nav {
     background: url(./images/black-textured-brick-wall-background_desktop.jpg);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
 }
+
+.slider-wrapper {
+    display: flex;
+    width: 500vw;
+}
+
+.slider-item {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
