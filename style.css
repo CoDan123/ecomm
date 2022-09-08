@@ -67,4 +67,31 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+}
+
+.slider-title {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    font-size: 60px;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+}
+
+.slider-price {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    font-size: 60px;
+    font-weight: 300;
+    color: white;
+    text-align: center;
+    border: 1px solid gray;
+}
+
+.slide-bg {
+    width: 750px;
+    
 }
