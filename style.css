@@ -51,3 +51,8 @@ nav {
     color: lightgray;
     font-weight: 400;
 }
+
+.slider {
+    background: url(./images/black-textured-brick-wall-background_desktop.jpg);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+}
