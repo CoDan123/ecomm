@@ -160,3 +160,18 @@ nav {
     color: burlywood;
 }
 
+.features {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.feature {
+
+}
+
+.feature-icon {
+    font-size: 50px;
+}
+
