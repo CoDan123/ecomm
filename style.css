@@ -50,16 +50,18 @@ nav {
     cursor: pointer;
     color: lightgray;
     font-weight: 400;
+    z-index: 3;
 }
 
 .slider {
     background: url(./images/black-textured-brick-wall-background_desktop.jpg);
-    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%); */
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
 }
 
 .slider-wrapper {
     display: flex;
     width: 500vw;
+    transition: 1000ms all ease-in-out;
 }
 
 .slider-item {
