@@ -34,9 +34,15 @@ const products = [
     }
 ];
 
+let chosenProduct = products[0];
+
 menuItems.forEach((item, index) => {
     item.addEventListener("click", ()=>{
+        //changes the current slide
         wrapper.style.transform = `translateX(${-100 * index}vw)`
+
+        //change the chosen product
+        chosenProduct = products.[index]
     });
 });
 
