@@ -23,11 +23,11 @@ const products = [
         price: 149, 
         colors: [
             {
-                code:"black", 
+                code:"lightgray", 
                 img:"./"
             },
             {
-                code:"darkblue",
+                code:"green",
                 img:"./"
             }
         ]
@@ -38,11 +38,11 @@ const products = [
         price: 149, 
         colors: [
             {
-                code:"black", 
+                code:"lightgray", 
                 img:"./"
             },
             {
-                code:"darkblue",
+                code:"green",
                 img:"./"
             }
         ]
@@ -57,7 +57,7 @@ const products = [
                 img:"./"
             },
             {
-                code:"darkblue",
+                code:"lightgray",
                 img:"./"
             }
         ]
@@ -68,11 +68,11 @@ const products = [
         price: 149, 
         colors: [
             {
-                code:"black", 
+                code:"gray", 
                 img:"./"
             },
             {
-                code:"darkblue",
+                code:"black",
                 img:"./"
             }
         ]
@@ -84,8 +84,8 @@ let chosenProduct = products[0];
 const currentProductImg = document.querySelector(".product-img");
 const currentProductTitle = document.querySelector(".product-title");
 const currentProductPrice = document.querySelector(".product-price");
-const currentProductColors = document.querySelector(".color");
-const currentProductSizes = document.querySelector(".size");
+const currentProductColors = document.querySelectorAll(".color");
+const currentProductSizes = document.querySelectorAll(".size");
 
 
 menuItems.forEach((item, index) => {
@@ -99,7 +99,12 @@ menuItems.forEach((item, index) => {
         //change text of current product
         currentProductTitle.textContent = chosenProduct.title;
         currentProductPrice.textContent = "$" + chosenProduct.price;
-        currentProductImg.src = chosenProduct.colors[0].img
+        currentProductImg.src = chosenProduct.colors[0].img;
+
+        //assign new colors
+        currentProductColors.forEach((color, index)=>{
+            color.style.backgroundColor = chosenProduct.colors[index].code;
+        })
     });
 });
 
