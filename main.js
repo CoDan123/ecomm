@@ -81,7 +81,7 @@ const products = [
 
 let chosenProduct = products[0];
 
-const currentProduct = document.querySelector(".product-img");
+const currentProductImg = document.querySelector(".product-img");
 const currentProductTitle = document.querySelector(".product-title");
 const currentProductPrice = document.querySelector(".product-price");
 const currentProductColors = document.querySelector(".color");
@@ -97,7 +97,9 @@ menuItems.forEach((item, index) => {
         chosenProduct = products[index]
 
         //change text of current product
-        currentProductTitle.textContent = chosenProduct.title
+        currentProductTitle.textContent = chosenProduct.title;
+        currentProductPrice.textContent = "$" + chosenProduct.price;
+        currentProductImg.src = chosenProduct.colors[0].img
     });
 });
 
