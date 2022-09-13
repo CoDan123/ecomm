@@ -31,6 +31,51 @@ const products = [
                 img:"./"
             }
         ]
+    },
+    {
+        id: 3, 
+        title:"Blazer", 
+        price: 149, 
+        colors: [
+            {
+                code:"black", 
+                img:"./"
+            },
+            {
+                code:"darkblue",
+                img:"./"
+            }
+        ]
+    },
+    {
+        id: 4, 
+        title:"Crater", 
+        price: 149, 
+        colors: [
+            {
+                code:"black", 
+                img:"./"
+            },
+            {
+                code:"darkblue",
+                img:"./"
+            }
+        ]
+    },
+    {
+        id: 5, 
+        title:"Hippie", 
+        price: 149, 
+        colors: [
+            {
+                code:"black", 
+                img:"./"
+            },
+            {
+                code:"darkblue",
+                img:"./"
+            }
+        ]
     }
 ];
 
@@ -50,6 +95,9 @@ menuItems.forEach((item, index) => {
 
         //change the chosen product
         chosenProduct = products[index]
+
+        //change text of current product
+        currentProductTitle.textContent = chosenProduct.title
     });
 });
 
