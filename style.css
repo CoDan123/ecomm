@@ -215,13 +215,15 @@ nav {
     display: flex;
     flex-direction: column;
     box-shadow: 0px 0px 11px 2px rgba(0,0,0,0.75);
--webkit-box-shadow: 0px 0px 11px 2px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 0px 11px 2px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 11px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 11px 2px rgba(0,0,0,0.75);
+    display: none;
 }
 
 .pay-title {
     font-size: 20px;
     color: gray;
+    margin: 15px 0;
 }
 
 label {
@@ -231,12 +233,58 @@ label {
 
 .pay-input {
     padding: 10px;
-    margin: 10px 0;
+    margin: 0 10px 10px 0;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+
+.pay-input::placeholder {
+    color: lightgray;
+}
+
+.card-icons {
+    display: flex;
+}
+
+.card-icon {
+    margin-right: 10px;
+}
+
+.card-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sm {
+    width: 30%;
+}
+
+.pay-button {
+    position: absolute;
+    height: 40px;
+    bottom: -40px;
+    width: 100%;
+    left: 0;
+    border: none;
+    background-color: rgb(87, 148, 102);
+    color: white;
+    cursor: pointer;
+}
+
+.close {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: gray;
+    color: white;
+    top: 10px;
+    right: 10px;
+    text-align: center;
+    cursor: pointer;
 }
 
 .product-img {
     width: 50%;
-
 }
 
 .product-details {
