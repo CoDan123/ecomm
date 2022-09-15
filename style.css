@@ -352,5 +352,10 @@ label {
 
 .gallery-item {
     flex: 1;
+    padding: 50px;
+}
+
+.gallery-img {
+    width: 100%;
 }
 
