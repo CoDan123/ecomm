@@ -345,3 +345,12 @@ label {
     color: black;
 }
 
+.gallery {
+    padding: 50px;
+    display: flex;
+}
+
+.gallery-item {
+    flex: 1;
+}
+
