@@ -359,3 +359,31 @@ label {
     width: 100%;
 }
 
+.new-season {
+    display: flex;
+}
+
+.ns-item {
+    flex: 1;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.ns-img {
+    width: 100%;
+}
+
+.ns-title {
+    font-size: 40px;
+}
+
+.ns-button {
+    padding: 15px;
+    font-weight: 600;
+}
+
