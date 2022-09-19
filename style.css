@@ -529,4 +529,16 @@ footer {
         font-size: 50px;
         margin: 0;
     }
+
+    .gallery {
+        display: none;
+    }
+
+    .new-season {
+        flex-direction: column;
+    }
+
+    .ns-item:nth-child(2) {
+        padding: 50px;
+    }
 }
