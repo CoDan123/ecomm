@@ -541,4 +541,26 @@ footer {
     .ns-item:nth-child(2) {
         padding: 50px;
     }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-left {
+        padding: 20px;
+        width: 90%;
+    }
+
+    .footer-right {
+        padding: 20px;
+        width: 90%;
+        align-items: center;
+        background-color: whitesmoke;
+    }
+
+    .payment {
+        width: 90%;
+        padding: 20px;
+    }
 }
