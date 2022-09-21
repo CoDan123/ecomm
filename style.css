@@ -363,6 +363,10 @@ label {
     display: flex;
 }
 
+.ns-text{
+    padding: 25px;
+}
+
 .ns-item {
     flex: 1;
     background-color: black;
@@ -373,6 +377,8 @@ label {
     justify-content: center;
     text-align: center;
 }
+
+.ns-item
 
 .ns-img {
     width: 100%;
