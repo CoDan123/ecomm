@@ -33,6 +33,10 @@ nav {
     background-color: transparent;
 }
 
+.search-input:focus {
+    outline: none;
+}
+
 .search-input::placeholder {
     color: lightgray;
 }
